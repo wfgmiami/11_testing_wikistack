@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"nodemon ./node_modules/mocha/bin/mocha",
+    "test":"DATABASE_URL=postgres://localhost/circle_test node ./node_modules/mocha/bin/mocha",
     "start:dev": "nodemon index.js",
     "test:dev": "nodemon ./node_modules/mocha/bin/mocha"
   },
